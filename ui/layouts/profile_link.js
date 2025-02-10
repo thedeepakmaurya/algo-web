@@ -1,6 +1,6 @@
 import Link from "next/link";
 
-const DashboardLink = ({
+const ProfileLink = ({
     active = false,
     label = "Label",
     heroIcon,
@@ -11,10 +11,7 @@ const DashboardLink = ({
         <li onClick={onClose} className="w-full">
             <Link
                 href={route}
-                className={`${active
-                    ? "bg-indigo-100 text-indigo-900"
-                    : "bg-transparent text-gray-400"
-                    } w-full hover:bg-indigo-50 hover:text-indigo-900 rounded-md py-2 px-3 flex flex-row items-center gap-3 transition-all duration-200`}
+                className=" w-full text-gray-400 hover:text-indigo-900 rounded-md py-1 flex flex-row items-center gap-3 transition-all duration-200"
             >
                 <span><i className={`${heroIcon} ri-md`}></i></span>
                 <span className="pt-[1px] font-[500] text-sm capitalize">
@@ -25,4 +22,4 @@ const DashboardLink = ({
     );
 };
 
-export default DashboardLink;
+export default ProfileLink;

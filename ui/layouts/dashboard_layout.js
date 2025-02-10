@@ -5,11 +5,15 @@ import Image from "next/image";
 import DashboardLink from "./dashboard_link";
 import data from "@/public/db/navigation.json";
 import { usePathname } from "next/navigation";
+import ProfileLink from "./profile_link";
 
 export default function DashboardLayout({ children }) {
 
     const [isSidebarOpen, setIsSidebarOpen] = useState(false);
+    const [isProfileOpen, setIsProfileOpen] = useState(false);
     const path = usePathname();
+
+    const { dashboard, profile } = data;
 
     const pageTitle = () => {
         switch (path) {
@@ -27,22 +31,22 @@ export default function DashboardLayout({ children }) {
     }
 
     return (
-        <div className="flex h-screen bg-gray-100">
+        <div className="flex h-screen ">
             {/* Sidebar - Hidden on small screens, always visible on medium and larger */}
             <div
                 className={` fixed inset-y-0 left-0 bg-white shadow transform transition-transform duration-300 z-30 md:relative md:translate-x-0 ${isSidebarOpen ? "translate-x-0" : "-translate-x-full"
-                    } md:w-64 w-64 xl:w-72`}
+                    } w-64 `}
             >
                 <nav className="flex py-4 flex-col gap-2 h-full">
                     <div className="px-4 ">
-                        <Image className="h-8 w-auto" src="/img/logo.png" alt="logo" width={100} height={100} />
+                        <Image className="h-6 w-auto" src="/img/logo.png" alt="logo" width={100} height={100} />
                     </div>
 
                     {/* sidebar menu */}
                     <ul className=" overflow-y-auto vertical-scrollbar w-full flex flex-col gap-2 px-4 ">
                         <div className="py-4 w-full flex flex-col gap-2">
                             {/* menu */}
-                            {data.map((nav, index) => (
+                            {dashboard.map((nav, index) => (
                                 <DashboardLink
                                     key={index}
                                     active={path === nav.route}
@@ -94,23 +98,49 @@ export default function DashboardLayout({ children }) {
                             href="#"
                             className=" text-gray-400"
                         >
-                            <h1 className="text-md font-medium ">{pageTitle()}</h1>
+                            <h1 className="text-sm font-medium ">{pageTitle()}</h1>
                         </Link>
                     </div>
 
-                    {/* Bell Icon */}
+                    {/* wallet icon & Bell Icon */}
                     <div className="w-fit flex flex-row items-center gap-2">
-
                         <div
                             href="#"
-                            className="text-xl text-indigo-500 hover:text-indigo-600 px-2 py-1 rounded-full transition-all duration-200 hover:bg-indigo-100"
+                            className="text-xl text-indigo-900 px-2 py-1 rounded-full transition-all duration-200 hover:bg-indigo-100"
                         >
-                            <i className="ri-notification-4-fill "></i>
+                            <i class="ri-wallet-3-line ri-1x"></i>
                         </div>
-                        <div className="cursor-pointer">
+                        <div
+                            href="#"
+                            className="text-xl text-indigo-900 px-2 py-1 rounded-full transition-all duration-200 hover:bg-indigo-100"
+                        >
+                            <i className="ri-notification-4-line ri-1x"></i>
+                        </div>
+                        <div onClick={() => setIsProfileOpen(!isProfileOpen)} className="cursor-pointer">
                             <Image className="h-10 w-10 rounded-full" src="/img/user.jpg" alt="user" width={100} height={100} />
                         </div>
                     </div>
+                    {/* profile nav */}
+                    {
+                        isProfileOpen &&
+                        <nav className="absolute top-14 right-7">
+                            <ul className=" w-full flex flex-col gap-2 bg-white p-4 border rounded-lg">
+                                <div className=" w-full flex flex-col gap-2">
+                                    {/* menu */}
+                                    {profile.map((nav, index) => (
+                                        <ProfileLink
+                                            key={index}
+                                            active={path === nav.route}
+                                            route={nav.route}
+                                            label={nav.label}
+                                            heroIcon={nav.icon}
+                                            onClose={() => setIsProfileOpen(false)}
+                                        />
+                                    ))}
+                                </div>
+                            </ul>
+                        </nav>
+                    }
                 </header>
 
                 {/* Page Content */}
