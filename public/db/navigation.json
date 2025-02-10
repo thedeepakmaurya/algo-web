@@ -1,0 +1,27 @@
+[
+  {
+    "icon": "ri-home-fill",
+    "route": "/",
+    "label": "home"
+  },
+  {
+    "icon": "ri-building-fill",
+    "route": "/brokers",
+    "label": "brokers"
+  },
+  {
+    "icon": "ri-lightbulb-flash-fill",
+    "route": "/strategies",
+    "label": "strategies"
+  },
+  {
+    "icon": "ri-speed-up-fill",
+    "route": "/backtest",
+    "label": "backtest"
+  },
+  {
+    "icon": "ri-file-chart-fill",
+    "route": "/reports",
+    "label": "reports"
+  }
+]
