@@ -1,10 +1,16 @@
+import Link from "next/link"
+
 const MyStrategies = () => {
     return (
         <div className="border rounded-lg h-60 w-full lg:w-1/3 relative">
-            <div className="border-b p-3">
+            <div className="flex items-center justify-between border-b p-3">
                 <div>
                     <h2 className="font-semibold text-base text-gray-800 mb-1">Advanced Delta Neutral</h2>
                     <h5 className="text-xs font-bold text-gray-600">By AR144271</h5>
+                </div>
+                {/* edit button */}
+                <div className="bg-background p-1 rounded-md">
+                    <Link href=""><i className="ri-pencil-fill text-primary ri-lg"></i></Link>
                 </div>
             </div>
 
@@ -25,8 +31,8 @@ const MyStrategies = () => {
             </div>
 
             <div className="absolute w-full bottom-0 border-t p-3 text-sm flex justify-center gap-4">
-                <button className="text-indigo-900 bg-indigo-100 py-2 px-4 rounded-md font-medium">Back Test</button>
-                <button className="text-indigo-900 bg-indigo-100 py-2 px-4 rounded-md font-medium">Deploy</button>
+                <button className="text-primary bg-background py-2 px-4 rounded-md font-medium">Back Test</button>
+                <button className="text-primary bg-background py-2 px-4 rounded-md font-medium">Deploy</button>
             </div>
         </div>
     )

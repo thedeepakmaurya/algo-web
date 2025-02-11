@@ -31,17 +31,18 @@ export default function DashboardLayout({ children }) {
     }
 
     return (
-        <div className="flex h-screen ">
+        <div className="flex h-screen">
             {/* Sidebar - Hidden on small screens, always visible on medium and larger */}
             <div
-                className={` fixed inset-y-0 left-0 bg-white shadow transform transition-transform duration-300 z-30 md:relative md:translate-x-0 ${isSidebarOpen ? "translate-x-0" : "-translate-x-full"
+                className={` fixed inset-y-0 left-0 bg-white shadow overflow-y-auto vertical-scrollbar transform transition-transform duration-300 z-30 md:relative md:translate-x-0 ${isSidebarOpen ? "translate-x-0" : "-translate-x-full"
                     } w-64 `}
             >
-                <nav className="flex py-4 flex-col gap-2 h-full">
-                    <div className="px-4 ">
-                        <Image className="h-6 w-auto" src="/img/logo.png" alt="logo" width={100} height={100} />
-                    </div>
+                {/* logo */}
+                <div className="p-4 sticky top-0 bg-white">
+                    <h1 className="text-2xl bg-gradient-to-tr from-indigo-950 via-indigo-600 to-indigo-400 bg-clip-text text-transparent font-extrabold">ALGOLOGO</h1>
+                </div>
 
+                <nav className="flex pb-4 flex-col gap-2">
                     {/* sidebar menu */}
                     <ul className=" overflow-y-auto vertical-scrollbar w-full flex flex-col gap-2 px-4 ">
                         <div className="py-4 w-full flex flex-col gap-2">
@@ -59,6 +60,37 @@ export default function DashboardLayout({ children }) {
                         </div>
                     </ul>
                 </nav>
+
+                <div className="p-4 flex flex-col gap-6">
+                    {/* indices */}
+                    <div className="border relative rounded-lg p-4">
+                        <span className="absolute -top-3 bg-white px-2 text-sm">Indices</span>
+                        <div className="flex flex-col font-semibold text-xs text-gray-800">
+                            <h3>NIFTY <span className="ps-3 text-red-500">23071.80 -1.32 %</span></h3>
+                            <h3>BNF <span className="ps-3 text-red-500">49403.40 -1.16 %</span></h3>
+                            <h3>FN <span className="ps-3 text-red-500">23089.60 -1.33 %</span></h3>
+                        </div>
+                    </div>
+
+                    {/* help desk */}
+                    <div className="border relative rounded-lg p-4">
+                        <span className="absolute -top-3 bg-white px-2 text-sm">Help Desk</span>
+                        <div className="flex flex-col gap-1 font-semibold text-primary text-xs">
+                            <h3><i className="ri-phone-fill"></i> Call us +91 98765 43210</h3>
+                            <h3><i className="ri-message-3-line"></i> Chat with us!</h3>
+                        </div>
+                    </div>
+
+                    {/* Social */}
+                    <div className="border relative rounded-lg p-4">
+                        <span className="absolute -top-3 bg-white px-2 text-sm">join Us</span>
+                        <div className="flex flex-col gap-1 font-semibold text-gray-800 text-xs">
+                            <h3><i className="ri-youtube-fill text-red-600"></i> <span className="ps-1">how to use?</span> </h3>
+                            <h3><i className="ri-telegram-fill text-sky-600"></i> <span className="ps-1">Realtime Updates</span></h3>
+                            <h3><i className="ri-instagram-fill text-pink-600"></i> <span className="ps-1">Join Instagram</span></h3>
+                        </div>
+                    </div>
+                </div>
             </div>
 
             {/* Overlay for mobile when sidebar is open */}

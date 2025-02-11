@@ -2,8 +2,8 @@ import Portfolio from "@/ui/sections/Portfolio"
 
 const MyPortfolio = () => {
     return (
-       <Portfolio/>
+        <Portfolio />
     )
 }
 
-export default MyPortfolio
+export default MyPortfolio;

@@ -18,7 +18,7 @@
 
 .vertical-scrollbar::-webkit-scrollbar {
   background-color: #fff;
-  width: 5px;
+  width: 3px;
 }
 
 .vertical-scrollbar::-webkit-scrollbar-thumb {
