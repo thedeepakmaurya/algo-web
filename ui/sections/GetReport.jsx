@@ -20,7 +20,7 @@ const GetReport = () => {
                     <div className="flex gap-4">
                         <div className="flex flex-col gap-1 w-1/2 lg:w-64">
                             <label className="font-semibold ">From</label>
-                            <input className="border rounded-md w-full  p-2 outline-none" type="date" name="from" />
+                            <input className="border rounded-md w-full p-2 outline-none" type="date" name="from" />
                         </div>
                         <div className="flex flex-col gap-1 w-1/2 lg:w-64">
                             <label className="font-semibold ">To</label>

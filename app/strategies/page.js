@@ -1,7 +1,8 @@
+import MyStrategies from "@/ui/sections/MyStrategies";
 
 const Strategies = () => {
     return (
-        <div>Ste</div>
+        <MyStrategies />
     )
 }
 

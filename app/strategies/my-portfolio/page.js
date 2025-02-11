@@ -1,9 +1,9 @@
+import Portfolio from "@/ui/sections/Portfolio"
 
-const Portfolio = () => {
+const MyPortfolio = () => {
     return (
-        <div>Portfolio
-        </div>
+       <Portfolio/>
     )
 }
 
-export default Portfolio
+export default MyPortfolio

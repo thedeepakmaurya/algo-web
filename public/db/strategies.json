@@ -1,15 +1,7 @@
 [
   {
-    "label": "create strategies",
-    "route": "/strategies"
-  },
-  {
     "label": "my strategies",
-    "route": "/strategies/my-strategies"
-  },
-  {
-    "label": "deployed strategies",
-    "route": "/strategies/deployed-strategies"
+    "route": "/strategies"
   },
   {
     "label": "my portfolio",
