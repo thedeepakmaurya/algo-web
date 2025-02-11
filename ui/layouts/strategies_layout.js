@@ -13,10 +13,10 @@ const StrategiesLayout = ({ children }) => {
                 {
                     menu.map((strategy, index) => {
 
-                        const isActive = strategy.route === path ? "bg-indigo-100  p-2  rounded-md" : "";
+                        const isActive = strategy.route === path ? "bg-background  p-2  rounded-md" : "";
 
                         return (
-                            <li className={`capitalize text-xs text-indigo-900 font-medium text-nowrap ${isActive}`} key={index} >
+                            <li className={`capitalize text-xs text-primary font-medium text-nowrap ${isActive}`} key={index} >
                                 <Link href={strategy.route}>{strategy.label}</Link>
                             </li>
                         )

@@ -12,9 +12,9 @@ const DashboardLink = ({
             <Link
                 href={route}
                 className={`${active
-                    ? "bg-indigo-100 text-indigo-900"
+                    ? "bg-background text-primary"
                     : "bg-transparent text-gray-400"
-                    } w-full hover:bg-indigo-50 hover:text-indigo-900 rounded-md py-2 px-3 flex flex-row items-center gap-3 transition-all duration-200`}
+                    } w-full hover:bg-indigo-50 hover:text-primary rounded-md py-2 px-3 flex flex-row items-center gap-3 transition-all duration-200`}
             >
                 <span><i className={`${heroIcon} ri-md`}></i></span>
                 <span className="pt-[1px] font-[500] text-sm capitalize">

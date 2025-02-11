@@ -39,7 +39,7 @@ export default function DashboardLayout({ children }) {
             >
                 {/* logo */}
                 <div className="p-4 sticky top-0 bg-white">
-                    <h1 className="text-2xl bg-gradient-to-tr from-indigo-950 via-indigo-600 to-indigo-400 bg-clip-text text-transparent font-extrabold">ALGOLOGO</h1>
+                    <h1 className="text-2xl bg-gradient-to-tr from-primary to-secondary bg-clip-text text-transparent font-extrabold">LOGO</h1>
                 </div>
 
                 <nav className="flex pb-4 flex-col gap-2">
@@ -125,13 +125,13 @@ export default function DashboardLayout({ children }) {
                     <div className="w-fit flex flex-row items-center">
                         <div
                             href="#"
-                            className="text-xl text-indigo-900 px-2 py-1 rounded-full transition-all duration-200 hover:bg-indigo-100"
+                            className="text-xl text-primary px-2 py-1 rounded-full transition-all duration-200 hover:bg-background"
                         >
                             <i className="ri-wallet-3-line ri-1x"></i>
                         </div>
                         <div
                             href="#"
-                            className="text-xl text-indigo-900 px-2 py-1 rounded-full transition-all duration-200 hover:bg-indigo-100"
+                            className="text-xl text-primary px-2 py-1 rounded-full transition-all duration-200 hover:bg-background"
                         >
                             <i className="ri-notification-4-line ri-1x"></i>
                         </div>

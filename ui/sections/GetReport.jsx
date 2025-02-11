@@ -9,8 +9,8 @@ const GetReport = () => {
     return (
         <section>
             <div className="flex gap-3 text-xs font-medium">
-                <button onClick={() => { setIsTrade(false); setIsDashboard(true) }} className={`text-indigo-900  p-2 rounded-md ${isDashboard && "bg-indigo-100"}`}>Dashboard</button>
-                <button onClick={() => { setIsDashboard(false); setIsTrade(true) }} className={`text-indigo-900 p-2 rounded-md ${isTrade && "bg-indigo-100"}`}>Trade Engine Logs</button>
+                <button onClick={() => { setIsTrade(false); setIsDashboard(true) }} className={`text-primary  p-2 rounded-md ${isDashboard && "bg-background"}`}>Dashboard</button>
+                <button onClick={() => { setIsDashboard(false); setIsTrade(true) }} className={`text-primary p-2 rounded-md ${isTrade && "bg-background"}`}>Trade Engine Logs</button>
             </div>
 
             {/* Get report */}
@@ -28,7 +28,7 @@ const GetReport = () => {
                         </div>
                     </div>
 
-                    <button className="text-indigo-900 border border-indigo-900 rounded-md h-fit p-2">Get Reports <i className="ri-download-cloud-2-line"></i></button>
+                    <button className="text-primary border border-primary/40 rounded-md h-fit p-2">Get Reports <i className="ri-download-cloud-2-line"></i></button>
                 </form>
             }
         </section>

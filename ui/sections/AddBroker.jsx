@@ -13,7 +13,7 @@ const AddBroker = () => {
             <h2 className="font-medium text-lg">Add new broker</h2>
             {/* broker */}
             <div className="flex items-center gap-4">
-                <Image className="w-16 h-16 border-4 border-indigo-100 rounded-full" src="/img/dhan_logo.png" alt="dhan" height={100} width={100} />
+                <Image className="w-16 h-16 border-4 border-background rounded-full" src="/img/dhan_logo.png" alt="dhan" height={100} width={100} />
                 <div>
                     <h3 className="font-medium pb-1">Dhan</h3>
                     <p onClick={() => setIsTutorial(true)} className="text-sm cursor-pointer">How to add Dhan broker? <i className="ri-youtube-fill text-red-600"></i></p>
@@ -22,7 +22,7 @@ const AddBroker = () => {
             {/* form  */}
             <form className="text-sm flex flex-col gap-4 w-full lg:w-1/3">
                 <input className="border border-gray-300 rounded-lg outline-none p-4" type="text" placeholder="Enter Broker ID" />
-                <button className="bg-gradient-to-tr from-indigo-900 to-indigo-400 p-2 font-bold text-white rounded-md">Submit</button>
+                <button className="bg-gradient-to-tr from-primary to-secondary p-2 font-bold text-white rounded-md">Submit</button>
             </form>
 
             {/* tutorial */}

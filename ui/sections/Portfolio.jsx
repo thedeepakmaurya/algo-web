@@ -11,19 +11,19 @@ const Portfolio = () => {
 
                 {/* date */}
                 <ul className="flex items-center gap-3 text-xs text-nowrap overflow-x-auto">
-                    <li className="text-indigo-900 font-medium bg-indigo-100 hover:text-white hover:bg-indigo-900 cursor-pointer p-2 rounded-md">1 Month</li>
-                    <li className="text-indigo-900 font-medium bg-indigo-100 hover:text-white hover:bg-indigo-900 cursor-pointer p-2 rounded-md">3 Month</li>
-                    <li className="text-indigo-900 font-medium bg-indigo-100 hover:text-white hover:bg-indigo-900 cursor-pointer p-2 rounded-md">6 Months</li>
-                    <li className="text-indigo-900 font-medium bg-indigo-100 hover:text-white hover:bg-indigo-900 cursor-pointer p-2 rounded-md">1 Year</li>
-                    <li className="text-indigo-900 font-medium bg-indigo-100 hover:text-white hover:bg-indigo-900 cursor-pointer p-2 rounded-md">2 Years</li>
-                    <li className="text-indigo-900 font-medium bg-indigo-100 hover:text-white hover:bg-indigo-900 cursor-pointer p-2 rounded-md">Custom Range</li>
+                    <li className="text-primary font-medium bg-background hover:text-white hover:bg-primary cursor-pointer p-2 rounded-md">1 Month</li>
+                    <li className="text-primary font-medium bg-background hover:text-white hover:bg-primary cursor-pointer p-2 rounded-md">3 Month</li>
+                    <li className="text-primary font-medium bg-background hover:text-white hover:bg-primary cursor-pointer p-2 rounded-md">6 Months</li>
+                    <li className="text-primary font-medium bg-background hover:text-white hover:bg-primary cursor-pointer p-2 rounded-md">1 Year</li>
+                    <li className="text-primary font-medium bg-background hover:text-white hover:bg-primary cursor-pointer p-2 rounded-md">2 Years</li>
+                    <li className="text-primary font-medium bg-background hover:text-white hover:bg-primary cursor-pointer p-2 rounded-md">Custom Range</li>
                 </ul>
             </section>
 
             {/* backtest credit */}
             <section className="flex justify-between border rounded-lg p-4 text-sm">
                 <h4 className="text-gray-600 bg-gray-200 rounded-md px-2 py-1 font-medium ">Backtest credit: 47/50</h4>
-                <button className="text-sm text-indigo-900 font-medium border border-indigo-800 px-2 rounded-md">Export to PDF</button>
+                <button className="text-sm text-primary font-medium border border-primary/40 px-2 rounded-md">Export to PDF</button>
             </section>
         </div>
     )

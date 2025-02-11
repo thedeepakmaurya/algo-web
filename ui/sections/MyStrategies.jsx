@@ -26,12 +26,12 @@ const MyStrategies = () => {
             </div>
 
             <div className="px-2 text-gray-600 text-xs flex gap-2">
-                <button className="bg-gray-100 p-1 rounded-md">SELL NIFTY BANK ATM 0 CE</button>
-                <button className="bg-gray-100 p-1 rounded-md">SELL NIFTY BANK ATM 0 PE</button>
+                <button className="bg-gray-100 p-1 rounded-sm">SELL NIFTY BANK ATM 0 CE</button>
+                <button className="bg-gray-100 p-1 rounded-sm">SELL NIFTY BANK ATM 0 PE</button>
             </div>
 
-            <div className="absolute w-full bottom-0 border-t p-3 text-sm flex justify-center gap-4">
-                <button className="text-primary bg-background py-2 px-4 rounded-md font-medium">Back Test</button>
+            <div className="absolute w-full bottom-0 border-t p-3 text-xs flex justify-center gap-4">
+                <button className="text-primary  bg-background py-2 px-4 rounded-md font-medium">Back Test</button>
                 <button className="text-primary bg-background py-2 px-4 rounded-md font-medium">Deploy</button>
             </div>
         </div>
