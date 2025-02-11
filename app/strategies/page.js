@@ -1,8 +1,8 @@
 
-const page = () => {
-  return (
-    <div>page</div>
-  )
+const Strategies = () => {
+    return (
+        <div>Ste</div>
+    )
 }
 
-export default page
+export default Strategies;

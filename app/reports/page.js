@@ -1,8 +1,9 @@
+import GetReport from "@/ui/sections/GetReport"
 
-const page = () => {
+const Reports = () => {
     return (
-        <div>page</div>
+        <GetReport />
     )
 }
 
-export default page
+export default Reports

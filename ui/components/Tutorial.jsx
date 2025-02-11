@@ -1,5 +1,5 @@
 
-const Tutorial = ({source, onClose}) => {
+const Tutorial = ({ source, onClose }) => {
     return (
         <div className="bg-white rounded-lg">
             <div className="p-4 border-b border-b-indigo-900 flex items-center justify-between">
@@ -7,7 +7,7 @@ const Tutorial = ({source, onClose}) => {
             </div>
             {/* youtube video */}
             <div>
-                <iframe src={source} className="w-full h-48 lg:h-80 rounded-b-lg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                <iframe src={source} className="w-full h-48 lg:h-80 rounded-b-lg" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboardWrite; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowFullScreen></iframe>
             </div>
         </div>
     )

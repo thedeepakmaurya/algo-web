@@ -1,8 +1,9 @@
+import BackTester from "@/ui/sections/BackTester"
 
-const page = () => {
-  return (
-    <div>page</div>
-  )
+const BackTest = () => {
+    return (
+        <BackTester />
+    )
 }
 
-export default page
+export default BackTest;

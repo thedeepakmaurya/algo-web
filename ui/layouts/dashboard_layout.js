@@ -79,20 +79,7 @@ export default function DashboardLayout({ children }) {
                             onClick={() => setIsSidebarOpen(!isSidebarOpen)}
                             className="md:hidden outline-none "
                         >
-                            <svg
-                                xmlns="http://www.w3.org/2000/svg"
-                                className="h-6 w-6"
-                                fill="none"
-                                viewBox="0 0 24 24"
-                                stroke="currentColor"
-                            >
-                                <path
-                                    strokeLinecap="round"
-                                    strokeLinejoin="round"
-                                    strokeWidth="2"
-                                    d="M4 6h16M4 12h16m-7 6h7"
-                                />
-                            </svg>
+                            <i className="ri-menu-2-line ri-lg"></i>
                         </button>
                         <Link
                             href="#"
@@ -108,7 +95,7 @@ export default function DashboardLayout({ children }) {
                             href="#"
                             className="text-xl text-indigo-900 px-2 py-1 rounded-full transition-all duration-200 hover:bg-indigo-100"
                         >
-                            <i class="ri-wallet-3-line ri-1x"></i>
+                            <i className="ri-wallet-3-line ri-1x"></i>
                         </div>
                         <div
                             href="#"
