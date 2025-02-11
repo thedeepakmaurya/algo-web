@@ -103,7 +103,7 @@ export default function DashboardLayout({ children }) {
                     </div>
 
                     {/* wallet icon & Bell Icon */}
-                    <div className="w-fit flex flex-row items-center gap-2">
+                    <div className="w-fit flex flex-row items-center">
                         <div
                             href="#"
                             className="text-xl text-indigo-900 px-2 py-1 rounded-full transition-all duration-200 hover:bg-indigo-100"
@@ -116,7 +116,7 @@ export default function DashboardLayout({ children }) {
                         >
                             <i className="ri-notification-4-line ri-1x"></i>
                         </div>
-                        <div onClick={() => setIsProfileOpen(!isProfileOpen)} className="cursor-pointer">
+                        <div onClick={() => setIsProfileOpen(!isProfileOpen)} className="cursor-pointer ms-2">
                             <Image className="h-10 w-10 rounded-full" src="/img/user.jpg" alt="user" width={100} height={100} />
                         </div>
                     </div>

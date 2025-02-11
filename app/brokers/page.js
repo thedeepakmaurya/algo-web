@@ -1,8 +1,9 @@
+import AddBroker from "@/ui/sections/AddBroker"
 
 const page = () => {
-  return (
-    <div>page</div>
-  )
+    return (
+        <AddBroker />
+    )
 }
 
 export default page
