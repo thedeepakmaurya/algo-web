@@ -35,7 +35,7 @@ export default function DashboardLayout({ children }) {
             {/* Sidebar - Hidden on small screens, always visible on medium and larger */}
             <div
                 className={` fixed inset-y-0 left-0 bg-white shadow overflow-y-auto vertical-scrollbar transform transition-transform duration-300 z-30 md:relative md:translate-x-0 ${isSidebarOpen ? "translate-x-0" : "-translate-x-full"
-                    } w-64 `}
+                    } w-auto `}
             >
                 {/* logo */}
                 <div className="p-4 sticky top-0 bg-white">

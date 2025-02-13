@@ -1,0 +1,34 @@
+[
+  {
+    "title": "trading days",
+    "count": "13",
+    "data": [
+      {
+        "days": "win days",
+        "percent": 46.15,
+        "compare": "6 VS 13"
+      },
+      {
+        "days": "Loss days",
+        "percent": 53.85,
+        "compare": "7 VS 13"
+      }
+    ]
+  },
+  {
+    "title": "total trades",
+    "count": "74",
+    "data": [
+      {
+        "days": "win trades",
+        "percent": 63.15,
+        "compare": "47 VS 74"
+      },
+      {
+        "days": "Loss trades",
+        "percent": 36.49,
+        "compare": "27 VS 74"
+      }
+    ]
+  }
+]
