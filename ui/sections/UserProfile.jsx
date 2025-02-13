@@ -28,14 +28,14 @@ const UserProfile = () => {
                             <div className="border rounded-lg py-3 px-2 flex items-center gap-4">
                                 <i className="ri-wallet-fill ri-xl"></i>
                                 <div>
-                                    <h2 className="font-bold text-gray-600 text-xl">0.00</h2>
+                                    <h2 className="font-semibold text-gray-600 text-xl">0.00</h2>
                                     <p className="text-sm text-gray-800">Wallet Amount</p>
                                 </div>
                             </div>
 
                             <div className="border rounded-lg py-3 px-2 flex items-center gap-4">
                                 <i className="ri-bank-card-fill ri-xl"></i>                                <div>
-                                    <h2 className="font-bold text-gray-600 text-xl">49.0</h2>
+                                    <h2 className="font-semibold text-gray-600 text-xl">49.0</h2>
                                     <p className="text-sm text-gray-800">Backtest Credit</p>
                                 </div>
                             </div>
@@ -43,7 +43,7 @@ const UserProfile = () => {
                             <div className="border rounded-lg py-3 px-2 flex items-center gap-4">
                                 <i className="ri-wallet-fill ri-xl"></i>
                                 <div>
-                                    <h2 className="font-bold text-gray-600 text-xl">Free Plan</h2>
+                                    <h2 className="font-semibold text-gray-600 text-xl">Free Plan</h2>
                                     <p className="text-sm text-gray-800">Active Plan</p>
                                 </div>
                             </div>
