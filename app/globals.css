@@ -25,3 +25,15 @@
   background-color: rgba(209, 209, 209, 1);
   border-radius: 20px;
 }
+
+@layer utilities{
+   
+  .input{
+    @apply border p-3 rounded-md flex items-center gap-2
+  }
+
+  input[type="text"],input[type="email"],input[type="number"],textarea{
+    @apply w-full bg-white outline-none text-gray-700 placeholder-gray-500 transition-all duration-200 ease-in-out;
+  } 
+
+}

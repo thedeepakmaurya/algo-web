@@ -57,7 +57,7 @@ const UserProfile = () => {
 
             {/* referral */}
             <section className="">
-                <h3 className="text-sm font-medium text-gray-600 mb-3">Refferal Link: <span className="text-primary font-normal"> https://web.algorooms.com/login?referral_code=AR144271 </span> <i className="ri-file-copy-line ri-lg cursor-pointer"></i></h3>
+                <h3 className="text-sm font-medium text-gray-600 mb-3">Refferal Link: <span className="text-blue-500 font-normal"> https://web.algorooms.com/login?referral_code=AR144271 </span> <i className="ri-file-copy-line ri-lg cursor-pointer"></i></h3>
                 <p className="text-gray-400 text-xs">Joined on 20/06/2024</p>
             </section>
         </div>
