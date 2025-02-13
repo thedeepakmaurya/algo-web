@@ -21,6 +21,6 @@ function TransactionDetails() {
             </div>
         </section>
     )
-}
+};
 
 export default TransactionDetails
