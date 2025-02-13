@@ -31,7 +31,7 @@ const MyStrategies = () => {
             </div>
 
             <div className="absolute w-full bottom-0 border-t p-3 text-xs flex justify-center gap-4">
-                <button className="text-primary  bg-background py-2 px-4 rounded-md font-medium">Back Test</button>
+                <Link href="/backtest" className="text-primary  bg-background py-2 px-4 rounded-md font-medium">Back Test</Link>
                 <button className="text-primary bg-background py-2 px-4 rounded-md font-medium">Deploy</button>
             </div>
         </div>

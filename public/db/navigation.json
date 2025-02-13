@@ -2,7 +2,7 @@
   "profile": [
     {
       "icon": "ri-user-6-fill",
-      "route": "/",
+      "route": "/profile",
       "label": "profile"
     },
     {
